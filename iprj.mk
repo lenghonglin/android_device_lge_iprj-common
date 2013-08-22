@@ -24,7 +24,7 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.iprj-common.rc:root/init.iprj-common.rc \
     $(LOCAL_PATH)/ueventd.iprj.rc:root/ueventd.iprj.rc \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+    device/lge/lu6200/fstab.iprj:root/fstab.iprj 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.iprj.usb.rc:root/init.iprj.usb.rc \
@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 ## Configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/config/atcmd_virtual_kbd.kl:system/usr/keylayout/atcmd_virtual_kbd.kl \
     $(LOCAL_PATH)/config/ffa-keypad_qwerty.kl:system/usr/keylayout/ffa-keypad_qwerty.kl \
     $(LOCAL_PATH)/config/pmic8058_pwrkey.kl:system/usr/keylayout/pmic8058_pwrkey.kl \
